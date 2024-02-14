@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  height: 170vh;
+  font-family: open sans, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+}
+
+header.fixed-header .logo .img-logo{width:170px;}
+
+header .logo .img-logo{
+  width: 15.625rem;
+  transition: all linear 0.5s;
+  margin-top: 1rem;
+  background: 90vh;
+}
+
+p {
+  margin-top: 85px;
+  padding: 20px;
+}
+
+i{
+  outline:none;
+}
+
+input[type=text] {
+  padding: 6px;
+  border: 0;
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid #555;
+  margin-left: 1rem;
+  width: 9rem;
+}
+
+.search-container button {
+  padding: 0.375rem 0.625rem;
+  float: right;
+  background: #000;
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 5.5rem;
+  z-index: 100;
+}
+.navbar .fa-fw {
+  font-size: 1.5rem;
+}
+.navbar .mobile-nav {
+  display: none;
+}
+.navbar .main-nav {
+  display: flex;
+}
+.navbar .main-nav-desk li {
+  padding: 0 0.2rem;
+}
+.navbar .main-nav-desk li a {
+  font-weight: 600;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+.navbar .main-nav-desk li .bottom:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.navbar .main-nav-desk {
+  display: flex;
+}
+
+
+.slide-container{
+  position: relative;
+  width:100%;
+  height:90vh;
+  margin-top:65px;
+}
+.slide-container .slides{
+  width: 100%;
+  height: calc(100% - 40px);
+  position: relative;
+  overflow: hidden;
+}
+.slide-container .slides .img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  background-size: cover;
+
+}
+.slide-container .slides .img:not(.active){
+  top: 0;
+  left: -100%;
+}
+span.next, span.prev{
+  position: absolute;
+  top: 45%;
+  transform: translateY(-45%);
+  padding:10px;
+  color: #555;
+  font-size:25px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 3px;
+  border-radius:200px;
+  background: #222;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+  height:35px;
+  width:35px;
+  text-align: center;
+  line-height:1rem;
+}
+span.next{
+  right: 20px;
+}
+span.prev{
+  left: 20px;
+}
+
+
+.dotsContainer{
+  position: absolute;
+  bottom: 5px;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dotsContainer .dot{
+  width: 15px;
+  height: 15px;
+  margin: 0px 2px;
+  border: 3px solid #bbb;
+  background: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+.dotsContainer .active{
+  background-color: #555;
+  border:1px solid #555;
+}
+
+@keyframes next1{
+  from{
+    left: 0%
+  }
+  to{
+    left: -100%;
+  }
+}
+@keyframes next2{
+  from{
+    left: 100%
+  }
+  to{
+    left: 0%;
+  }
+}
+
+@keyframes prev1{
+  from{
+    left: 0%
+  }
+  to{
+    left: 100%;
+  }
+}
+@keyframes prev2{
+  from{
+    left: -100%
+  }
+  to{
+    left: 0%;
+  }
+}
+
+
+@media(max-width:800px){
+
+  header .logo .img-logo {
+    width: 6.25rem;
+    margin-left: 3.1rem;
+  }
+  header.fixed-header .logo .img-logo {
+    width: 6.25rem;
+  }
+  .navbar .item:nth-child(1),
+  .navbar .main-nav-desk,
+  .navbar .main-nav {
+    display: none;
+  }
+  .navbar .mobile-nav {
+    display: block;
+  }
+  .navbar .show-icon {
+    display: flex;
+  }
+  .navbar .main-nav-desk li {
+    padding: 0;
+  }
+
+
+ 
+  body{
+    min-height:40vh;
+  
+  }
+  .slide-container{
+    position: relative;
+    width:100%;
+    height:350px;
+  }
+  .slide-container .slides{
+    width: 100%;
+   
+  }
+  .slide-container .slides .img{
+    object-fit:fill;
+    background-size:cover;
+  }
+  
+  span.next, span.prev{
+    display: none;
+  }
+  
+  .dotsContainer{bottom:12px;}
+  
+  .dotsContainer .dot{
+    width:8px;
+    height:8px;
+  }
+
+ 
+ 
+}
+
+@media(max-width:17.5rem){
+
+  header .logo .img-logo{margin-left:1.2rem;}
+
+  .navbar{
+  .fa-fw{font-size:1.2rem;} 
+  }
+
+}

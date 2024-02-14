@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <ul class="mobile-nav">
+                 <li><a class="mobile-nav" href="#"><i class="fa fa-fw fa-bars"></i></a></li>
+            </ul>
+            <div class="item main-nav">
+                <form action="" method="post" class="search-container" autocomplete="off">
+                  <input type="text" placeholder="Search.." name="search" autocomplete="off">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="item">
+                <a class="logo" href="#"><img class="img-logo"  src="img/logo.webp" alt="logo"></a>
+            </div>
+            <div class="item">
+              <ul class="main-nav-desk ">
+                <li><a href="#" class="bottom">cadastre-se</a></li>
+                <li><a href="#" class="bottom">iniciar sessão</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a></i></li>
+              </ul>
+            </div>
+              <ul class="mobile-nav show-icon">
+                <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a></i></li>
+                <li><a href="#"><i class="fa fa-fw fa-search"></i></a></i></li>
+             </ul>
+        </nav>
+        <div class="slide-container">
+            <div class="slides">
+                <img src="img/nest.webp" class="active img">
+                <img src="img/img-header2.webp" class="img">
+                <img src="img/img-header3.webp" class="img">
+                <img src="img/img-header4.webp" class="img">
+                <img src="img/img-header5.webp" class="img">
+            </div>
+        
+            <div class="buttons">
+                <span class="next">&#10095;</span>
+                <span class="prev">&#10094;</span>
+            </div>
+        
+            <div class="dotsContainer">
+                <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                <div class="dot" attr='3' onclick="switchImage(this)"></div>
+                <div class="dot" attr='4' onclick="switchImage(this)"></div>
+            </div>
+        </header>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="js/main.js"></script>
+    <script src="js/query.js"></script>
+  
+</html>
