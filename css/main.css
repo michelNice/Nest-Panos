@@ -2,6 +2,13 @@
       /*SETTING UP*/
 /**************************/
 
+:root{
+  --white--color:#fff;
+  --black--color:#000;
+  --grey--color:#555;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -10,14 +17,13 @@
 }
 
 body {
-  height: 270vh;
   font-family: open sans, sans-serif;
   font-size: 1rem;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white--color);
   font-size: 0.8rem;
 }
 
@@ -39,12 +45,7 @@ header .logo .img-logo{
   margin-top: 1rem;
   background: 90vh;
 }
-/*
-p {
-  margin-top: 85px;
-  padding: 20px;
-}
-*/
+
 
 i{
   outline:none;
@@ -52,40 +53,38 @@ i{
 
 
 .conteiner button{
-  color:#fff;
-  background: #000;
+  color:var(--white--color);
+  background: var(--black--color);
   padding:.4rem 1rem;
   cursor: pointer;
   text-transform: uppercase;
   font-size:0.8rem;
-  border: 1px solid #000;
+  border: 1px solid var(--black--color);
 }
 
 
-
-
 input[type=text] {
-  padding: 6px;
+  padding:.375rem;
   border: 0;
-  background: #000;
-  color: #fff;
-  border-bottom: 1px solid #555;
+  background: var(--black--color);
+  color: var(--white--color);
+  border-bottom: 1px solid var(--grey--color);
   margin-left: 1rem;
   width: 9rem;
 }
 
 .row{
   margin:0 auto;
-  max-width:1300px;
+  max-width:75rem;
 }
 
 .search-container button {
   padding: 0.375rem 0.625rem;
   float: right;
-  background: #000;
-  color: #fff;
+  background: var(--black--color);
+  color: var(--white--color);
   border: 0;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid var(--grey--color);
 }
 
 /**************************/
@@ -96,7 +95,7 @@ input[type=text] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000;
+  background: var(--black--color);
   width: 100%;
   position: fixed;
   top: 0;
@@ -121,7 +120,7 @@ input[type=text] {
   text-transform: uppercase;
 }
 .navbar .main-nav-desk li .bottom:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--white--color);
 }
 
 .navbar .main-nav-desk {
@@ -135,7 +134,7 @@ input[type=text] {
   position: relative;
   width:100%;
   height:90vh;
-  margin-top:65px;
+  margin-top:4.5rem;
 }
 .slide-container .slides{
   width: 100%;
@@ -160,40 +159,40 @@ span.next, span.prev{
   top: 45%;
   transform: translateY(-45%);
   padding:10px;
-  color: #555;
-  font-size:25px;
+  color: var(--grey--color);
+  font-size:1.563rem;
   font-weight: bold;
   transition: 0.5s;
   border-radius: 3px;
-  border-radius:200px;
+  border-radius:12.5rem;
   background: #222;
   user-select: none;
   cursor: pointer;
   z-index: 1;
-  height:35px;
-  width:35px;
+  height:2.188rem;
+  width:2.188rem;
   text-align: center;
   line-height:1rem;
 }
 span.next{
-  right: 20px;
+  right:1.25rem;
 }
 span.prev{
-  left: 20px;
+  left:1.25rem;
 }
 
 
 .dotsContainer{
   position: absolute;
-  bottom: 5px;
+  bottom:0.313rem;
   z-index: 3;
   left: 50%;
   transform: translateX(-50%);
 }
 .dotsContainer .dot{
-  width: 15px;
-  height: 15px;
-  margin: 0px 2px;
+  width:.938rem;
+  height:.938rem;
+  margin:0 .125rem;
   border: 3px solid #bbb;
   background: #bbb;
   border-radius: 50%;
@@ -202,8 +201,8 @@ span.prev{
   transition: background-color 0.6s ease;
 }
 .dotsContainer .active{
-  background-color: #555;
-  border:1px solid #555;
+  background-color: var(--grey--color);
+  border:1px solid var(--grey--color);
 }
 
 @keyframes next1{
@@ -251,14 +250,12 @@ span.prev{
 }
 
 
-
-
 .conteiner{
   width:23%;
 	margin: 0;
   overflow: hidden;
   position: relative;
-  background: #000;
+  background: var(--black--color);
   display: block;
  
 }
@@ -266,9 +263,7 @@ span.prev{
 
 
 .conteiner img{
-  
   transform: scale(1);
-	/*transition: transform 0.5s, opacity 0.5s;*/
   transition: opacity 1s  ease-in-out, transform 0.8s;
   opacity: 0.7;
   height:100%;
@@ -285,7 +280,7 @@ span.prev{
 }
 
 .conteiner .content{
-  color:#fff;
+  color:var(--white--color);
   top:50%;
   transform: translate(-50%,-50%);
   left:50%;
@@ -308,7 +303,22 @@ span.prev{
       /*MOBILE*/
 /**************************/
 
-@media(max-width:1000px){
+@media(max-width:75rem){
+  .conteiner{
+    width:30%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--black--color);
+    display: block;
+   
+  }
+
+  
+  
+}
+
+@media(max-width:44rem){
 
   header .logo .img-logo {
     width: 6.25rem;
@@ -341,7 +351,7 @@ span.prev{
   .slide-container{
     position: relative;
     width:100%;
-    height:350px;
+    height:21.875rem;
   }
   .slide-container .slides{
     width: 100%;
@@ -359,8 +369,8 @@ span.prev{
   .dotsContainer{bottom:12px;}
   
   .dotsContainer .dot{
-    width:8px;
-    height:8px;
+    width:.5rem;
+    height:.5rem;
   }
 
   
@@ -369,17 +379,25 @@ span.prev{
     margin: 0;
     overflow: hidden;
     position: relative;
-    background: #000;
+    background: var(--black--color);
   }
+
+  
 
   .conteiner{
     width:100%;
     margin: 0;
     overflow: hidden;
     position: relative;
-    background: #000;
+    background: var(--black--color);
     display: block;
   }
+
+  .conteiner .content h3{
+    font-size:1.8rem;
+  }
+
+  
 
   .main-page{
     margin:2rem 0;
