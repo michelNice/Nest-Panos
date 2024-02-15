@@ -47,7 +47,13 @@
 		}
 	}
 
-	autoSliding()
+	if (window.matchMedia('(max-width: 767px)').matches) {
+        autoSliding()
+    } else {
+        autoSliding(undefined)
+    }
+
+	
 	
 
 	// Stop auto sliding when mouse is over
