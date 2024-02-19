@@ -17,7 +17,7 @@
             <div class="item main-nav">
                 <form action="" method="post" class="search-container" autocomplete="off">
                   <input type="text"  name="search" autocomplete="off">
-                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <button type="submit" class="button-nav"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <div class="item">
@@ -43,12 +43,10 @@
                 <img src="img/img-header4.webp" class="img">
                 <img src="img/img-header5.webp" class="img">
             </div>
-        
             <div class="buttons">
                 <span class="next">&#10095;</span>
                 <span class="prev">&#10094;</span>
             </div>
-        
             <div class="dotsContainer">
                 <div class="dot active" attr='0' onclick="switchImage(this)"></div>
                 <div class="dot" attr='1' onclick="switchImage(this)"></div>
@@ -58,32 +56,187 @@
             </div>
         </header>
         <main class="main-page">
-              <div class="conteiner">
-                  <img src="/img/show-product2.webp" alt="">
-                  <div class="content">
+            <section class="showcase">
+                <div class="conteiner">
+                    <figure class="gallery-item showcase-conteiner">
+                      <img class="gallery-img" src="img/show-product2.webp"/>
+                      <div class="content">
                         <h3>Camiseta</h3>
                         <p>Camiseta NEST e outras marcas da casa.</p>
-                        <button class="test">ver tudo</button>
+                        <button class="button-global">ver todo</button>
+                      </div>
+                    </figure>
+                  </div>
+                  <div class="conteiner">
+                    <figure class="gallery-item showcase-conteiner">
+                      <img class="gallery-img" src="img/show-product1.webp"/>
+                      <div class="content">
+                        <h3>Acessórios</h3>
+                        <p>bone ,Shoulder Bags, bucket hats pra complementar o kit.</p>
+                        <button class="button-global">Só clicar</button>
+                      </div>
+                    </figure>
+                  </div>
+                  <div class="conteiner">
+                    <figure class="gallery-item showcase-conteiner">
+                      <img class="gallery-img" src="img/show-product3.webp"/>
+                      <div class="content">
+                        <h3>Bonés</h3>
+                        <p>Aquele cap elegante pra fechar as combinações!</p>
+                        <button class="button-global">quero</button>
+                      </div>
+                    </figure>
+                  </div>       
+            </section>
+            <section class="product">
+                  <div class="row">
+                      <h2>INSPIRAR E FORTALECER UNS AOS OUTROS.</h2>
+                      <p>#nemeuseitudo</p>
+                  </div>
+                  <div class="row grid-item">
+                     <div class="productNest">
+                          <div class="container">
+                            <img src="img/product-front1.webp" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div href="#" class="icon" title="User Profile">
+                                  <img src="img/product-back1.webp" alt="Avatar" class="image">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <a href="#">CAMISETA NEST PANOS TIME PRETA<br> DOURADA</a>
+                            <h4>R$109,90</h4>
+                            <div class="price"><strong>3</strong> x de <strong>R$36,63</strong> sem juros</div>
+                            <button class="button-global">compra</button>
+                        </div>
+                      </div>
+                      <div class="productNest">
+                        <div class="container">
+                          <img src="img/product-front2.webp" alt="Avatar" class="image">
+                          <div class="overlay">
+                            <div href="#" class="icon" title="User Profile">
+                                <img src="img/product-back2.webp" alt="Avatar" class="image">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                          <a href="#">CALÇA TACTEL NEST PANOS X<br> NERD AZUL MARINHO</a>
+                          <h4>R$189,90</h4>
+                          <div class="price"><strong>3</strong> x de <strong>R$63,30</strong> sem juros</div>
+                          <button class="button-global">compra</button>
+                      </div>
+                    </div>
+                    <div class="productNest">
+                      <div class="container">
+                        <img src="img/product-front3.webp" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div href="#" class="icon" title="User Profile">
+                              <img src="img/product-back3.webp" alt="Avatar" class="image">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <a href="#">JAQUETA CORTA VENTO<br> NEST PANOS X NERD PRETA</a>
+                        <h4>R$289,90</h4>
+                        <div class="price"><strong>3</strong> x de <strong>R$96,63</strong> sem juros</div>
+                        <button class="button-global">compra</button>
+                    </div>
+                  </div>
+                  <div class="productNest">
+                    <div class="container">
+                      <img src="img/product-front4.webp" alt="Avatar" class="image">
+                      <div class="overlay">
+                        <div href="#" class="icon" title="User Profile">
+                            <img src="img/product-back4.webp" alt="Avatar" class="image">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <a href="#">CAMISETA NEST PANOSXNERD<br> TIME PRETA COM ROSA </a>
+                      <h4>R$139,90</h4>
+                      <div class="price"><strong>3</strong> x de <strong>R$46,63</strong> sem juros</div>
+                      <button class="button-global">compra</button>
+                  </div>
+                </div>
+                  </div>
+
+                  <div class="row grid-item">
+                    <div class="productNest">
+                         <div class="container">
+                           <img src="img/product-front5.webp" alt="Avatar" class="image">
+                           <div class="overlay">
+                             <div href="#" class="icon" title="User Profile">
+                                 <img src="img/product-back5.webp" alt="Avatar" class="image">
+                             </div>
+                           </div>
+                         </div>
+                         <div class="content">
+                           <a href="#">BERMUDA DE SARJA CARGO<br> NEST PANOS JEANS ELÁSTICO</a>
+                           <h4>R$139,90</h4>
+                           <div class="price"><strong>3</strong> x de <strong>R$46,63</strong> sem juros</div>
+                           <button class="button-global">compra</button>
+                       </div>
+                     </div>
+                     <div class="productNest">
+                       <div class="container">
+                         <img src="img/product-front6.webp" alt="Avatar" class="image">
+                         <div class="overlay">
+                           <div href="#" class="icon" title="User Profile">
+                               <img src="img/product-back6.webp" alt="Avatar" class="image">
+                           </div>
+                         </div>
+                       </div>
+                       <div class="content">
+                         <a href="#">CAMISETA NEST PANOS TIME<br> OFF WHITE COM MARROM</a>
+                         <h4>R$109,90</h4>
+                         <div class="price"><strong>3</strong> x de <strong>R$36,30</strong> sem juros</div>
+                         <button class="button-global">compra</button>
+                     </div>
+                   </div>
+                   <div class="productNest">
+                     <div class="container">
+                       <img src="img/product-front7.webp" alt="Avatar" class="image">
+                       <div class="overlay">
+                         <div href="#" class="icon" title="User Profile">
+                             <img src="img/product-back7.webp" alt="Avatar" class="image">
+                         </div>
+                       </div>
+                     </div>
+                     <div class="content">
+                       <a href="#">BONÉ FIVE PANEL NEST PANOS<br> TAG BRANCO LATERAL</a>
+                       <h4>R$99,90</h4>
+                       <div class="price"><strong>3</strong> x de <strong>R$33,30</strong> sem juros</div>
+                       <button class="button-global">compra</button>
+                   </div>
+                 </div>
+                 <div class="productNest">
+                   <div class="container">
+                     <img src="img/product-front8.webp" alt="Avatar" class="image">
+                     <div class="overlay">
+                       <div href="#" class="icon" title="User Profile">
+                           <img src="img/product-back8.webp" alt="Avatar" class="image">
+                       </div>
+                     </div>
+                   </div>
+                   <div class="content">
+                     <a href="#">CAMISETA NEST PANOSXNERD<br> TIME PRETA COM ROSA </a>
+                     <h4>R$139,90</h4>
+                     <div class="price"><strong>3</strong> x de <strong>R$46,63</strong> sem juros</div>
+                     <button class="button-global">compra</button>
+                 </div>
+               </div>
+              </div>
+              <div class="row">
+                  <div class="product-conteiner">
+                      <button class="button-global button-product">ver  todos  os  productos</button>
                   </div>
               </div>
-              <div class="conteiner">
-                <img src="/img/show-product1.webp" alt="">
-                <div class="content">
-                      <h3>Acessorio</h3>
-                      <p>bne shoulder bags, bucker hat pra<br> complentar okit </p>
-                      <button>So click</button>
-                </div>
-            </div>
-            <div class="conteiner">
-                <img src="/img/show-product3.webp" alt="">
-                <div class="content">
-                      <h3>Bones</h3>
-                      <p>Aque cap elegante pra fechar as combinacoes.</p>
-                      <button>Quero</button>
-                </div>
-            </div>
+             </section>
+             <div class="store">
+                <img src="img/store.webp" alt="">
+             </div>
         </main>
-</body>
+  </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
     <script src="js/main.js"></script>
     <script src="js/query.js"></script>
