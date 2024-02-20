@@ -82,18 +82,6 @@ input[type=text] {
   opacity: 0.8;
  }
 
-
-.button-nav{
-  padding: 0.345rem 0.625rem;
-  float: right;
-  background: var(--black--color);
-  color: var(--white--color);
-  border: 0;
-  border-bottom: 1px solid var(--grey--color);
-
-}
-
-
 /**************************/
       /*NEVEGATION*/
 /**************************/
@@ -132,6 +120,16 @@ input[type=text] {
 
 .navbar .main-nav-desk {
   display: flex;
+}
+
+.button-nav{
+  padding: 0.367rem 0.625rem;
+  float: right;
+  background: var(--black--color);
+  color: var(--white--color);
+  border: 0;
+  border-bottom: 1px solid var(--grey--color);
+
 }
 /**************************/
       /*SLIDE*/
@@ -188,7 +186,6 @@ span.prev{
   left:1.25rem;
 }
 
-
 .dotsContainer{
   position: absolute;
   bottom:0.313rem;
@@ -228,7 +225,6 @@ span.prev{
     left: 0%;
   }
 }
-
 @keyframes prev1{
   from{
     left: 0%
@@ -248,7 +244,6 @@ span.prev{
 /************************/
       /*SHOWCASE*/
 /************************/
-
 .showcase{
   justify-content: center;
   align-items: center;
@@ -323,7 +318,6 @@ span.prev{
   padding:4rem 0;
 
 }
-
 .product p,
 .product h2{
   text-align: center;
@@ -335,10 +329,9 @@ span.prev{
   font-size:.9rem;
 }
 
-
 .grid-item{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(140px,2fr));
+  grid-template-columns:repeat(auto-fit, minmax(150px,2fr));
   grid-gap:1rem;
 }
 
@@ -446,7 +439,32 @@ span.prev{
 .store img{
   width:100%;
 }
+/**************************/
+    /*VIDEO NEST*/
+/*************************/
 
+.product-video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  margin: auto;
+  display: block;
+  margin:6rem 0;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  height: 75%;
+  border: none;
+  display:block;
+  margin:0 auto;
+}
 /**************************/
       /*MOBILE*/
 /**************************/
@@ -570,6 +588,17 @@ span.prev{
     margin:0rem 0;
     padding:0.9rem;
   }
+
+
+  .product-video {
+    margin:1rem 0;
+  }
+  
+  .responsive-iframe {
+    width:100%;
+    height:100%;
+  }
+  
 }
 
 @media(max-width:17.5rem){
