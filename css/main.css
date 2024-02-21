@@ -5,6 +5,7 @@
   --white--color:#fff;
   --black--color:#000;
   --grey--color:#555;
+  --instagran-bg-color:#f7f7f7;
 }
 
 * {
@@ -17,6 +18,7 @@
 body {
   font-family: open sans, sans-serif;
   font-size: 1rem;
+  background: var(--white--color);
 }
 
 a {
@@ -50,7 +52,7 @@ i{
 
 section{
   padding:2rem 0;
-  clear: both;
+ 
 }
 
 input[type=text] {
@@ -440,31 +442,77 @@ span.prev{
   width:100%;
 }
 /**************************/
-    /*VIDEO NEST*/
+      /*VIDEO NEST*/
 /*************************/
 
 .product-video {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  margin: auto;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio*/
   display: block;
-  margin:6rem 0;
+
 }
 
 .responsive-iframe {
   position: absolute;
-  top: 0;
+  top:13%;
   left: 0;
   bottom: 0;
   right: 0;
-  width: 75%;
-  height: 75%;
+  width:75%;
+  height:75%;
   border: none;
   display:block;
   margin:0 auto;
 }
+
+
+
+/**************************/
+    /*SOCIAL MEDIA NEST*/
+/**************************/
+.nestIntagram{
+  background:var(--instagran-bg-color);
+}
+
+.instagram,
+.nestIntagram{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  height:20vh;
+  margin:0 auto;
+  
+}
+
+.nestIntagram .content{
+  cursor: pointer;
+}
+.test{
+  background: #000;
+  color: #000;
+}
+
+.nestIntagram a {
+  font-size:0.7rem;
+  color: #222;
+  
+}
+
+.nestIntagram a h2{
+  color:var(--black--color);
+  font-size:1.6rem;
+}
+
+
+
+.nestIntagram i{
+  font-size:3.5rem;
+}
+
+
+
 /**************************/
       /*MOBILE*/
 /**************************/
@@ -477,6 +525,10 @@ span.prev{
 
 }
 
+.nestIntagram{
+  height:10vh;
+ 
+}
 
   .showcase{
     padding:1rem .9rem;
@@ -488,6 +540,8 @@ span.prev{
   .slide-container{
     height:40vh;
   }
+
+  
 
 }
 
@@ -574,7 +628,6 @@ span.prev{
     padding:1rem 0;
   } 
 
-
   .product-conteiner .conteiner .imgs > img{
   
     width: 150px;
@@ -597,7 +650,23 @@ span.prev{
   .responsive-iframe {
     width:100%;
     height:100%;
+    top:0;
   }
+
+  .nestIntagram{
+    height:15vh;
+  }
+  
+  
+  
+  .nestIntagram p{
+    font-size:0.7rem;
+  }
+  
+  .nestIntagram i{
+    font-size:3.5rem;
+  }
+  
   
 }
 
