@@ -477,6 +477,7 @@ span.prev{
   margin-top:100rem;
 }
 
+
 .instagram,
 .nestIntagram{
   display: flex;
@@ -508,6 +509,25 @@ span.prev{
 .nestIntagram i{
   font-size:3.5rem;
 }
+
+.nestFacebook{
+  margin: 0 auto;
+  text-align: center;
+  display:block;
+  padding: 0;
+}
+
+.nestFacebook h4{
+  font-size:1.5rem;
+  font-weight: 300;
+  margin:0.4rem 0;
+}
+
+.nestFacebook .lineFacebook {
+  border-top: 1px dotted #ccc;
+  margin:0.9rem ;
+}
+ 
 
 
 
