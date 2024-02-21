@@ -474,6 +474,7 @@ span.prev{
 /**************************/
 .nestIntagram{
   background:var(--instagran-bg-color);
+  margin-top:100rem;
 }
 
 .instagram,
@@ -489,10 +490,7 @@ span.prev{
 .nestIntagram .content{
   cursor: pointer;
 }
-.test{
-  background: #000;
-  color: #000;
-}
+
 
 .nestIntagram a {
   font-size:0.7rem;
@@ -526,7 +524,7 @@ span.prev{
 }
 
 .nestIntagram{
-  height:10vh;
+  height:13vh;
  
 }
 
@@ -655,7 +653,8 @@ span.prev{
 
   .nestIntagram{
     height:15vh;
-  }
+    margin-top:2.5rem;
+    }
   
   
   
@@ -663,10 +662,12 @@ span.prev{
     font-size:0.7rem;
   }
   
-  .nestIntagram i{
-    font-size:3.5rem;
-  }
   
+  
+
+  .nestIntagram a h2{
+    font-size:1.3rem;
+  }
   
 }
 
