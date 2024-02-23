@@ -5,7 +5,10 @@
   --white--color:#fff;
   --black--color:#000;
   --grey--color:#555;
-  --instagran-bg-color:#f7f7f7;
+ --instagran-bg-color:#f7f7f7;
+ --footer-bg-color:#eee;
+ --slide-color-one:#222;
+  --slide-color-two:#bbb;
 }
 
 * {
@@ -172,7 +175,7 @@ span.next, span.prev{
   transition: 0.5s;
   border-radius: 3px;
   border-radius:12.5rem;
-  background: #222;
+  background: var(--slide-color-one);
   user-select: none;
   cursor: pointer;
   z-index: 1;
@@ -199,8 +202,8 @@ span.prev{
   width:.625rem;
   height:.625rem;
   margin:0 .125rem;
-  border: 3px solid #bbb;
-  background: #bbb;
+  border: 3px solid var(--slide-color-two);
+  background: var(--slide-color-two);
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
@@ -299,6 +302,7 @@ span.prev{
   visibility: visible;
   opacity: 1;
 }
+/*
 .showcase .containerbutton{
   color:var(--white--color);
   background: var(--black--color);
@@ -309,6 +313,7 @@ span.prev{
   z-index: 1;
   cursor:pointer;
 }
+*/
 
 .showcase .conteiner button:hover{
   opacity:0.9;
@@ -532,6 +537,44 @@ span.prev{
       /*NEST PROCESS*/
 /**************************/
 
+.nestProcess{
+  display: flex;
+  justify-content:space-around;
+  padding:6rem 0;
+}
+
+
+.nestProcess .vl{
+  border-left: 1px solid var(--black--color);
+}
+
+
+ .conteiner-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nestProcess .conteiner-box p{
+
+  font-size: 0.9rem;
+}
+
+.nestProcess .conteiner-box i{
+  font-size: 2rem;
+  margin:0 1rem;
+  color: var(--grey--color);
+}
+
+.nestProcess .conteiner-box div{
+  margin:0 1rem;
+}
+
+
+
+
+
 
 /**************************/
       /*MOBILE*/
@@ -545,6 +588,7 @@ span.prev{
 
 }
 
+
 .conteiner-process{
   display: none;
 }
@@ -553,7 +597,7 @@ span.prev{
   height:13vh;
  
 }
-
+  .nestProcess,
   .showcase{
     padding:1rem .9rem;
   }
@@ -578,9 +622,11 @@ span.prev{
   header.fixed-header .logo .img-logo {
     width: 6.25rem;
   }
-
   
-  .nestProcess .vl,
+  
+  .vl,
+  .deleted,
+  span.next, span.prev,
   .navbar .item:nth-child(1),
   .navbar .main-nav-desk,
   .navbar .main-nav {
@@ -609,10 +655,7 @@ span.prev{
     background-size:cover;
   }
   
-  span.next, span.prev{
-    display: none;
-  }
-  
+ 
   .dotsContainer{bottom:12px;}
   
   .dotsContainer .dot{
@@ -620,15 +663,19 @@ span.prev{
     height:.5rem;
   }
 
+  /*
   .conteiner{
     width:100%;
   
   }
+  */
 
   .showcase{
     flex-direction:column;
   }
 
+
+  .container,
   .showcase .conteiner{
     width:100%;
  
@@ -665,7 +712,7 @@ span.prev{
   }
 
   .product-conteiner{
-    margin:0rem 0;
+    margin:0;
     padding:0.9rem;
   }
 
@@ -696,9 +743,28 @@ span.prev{
     font-size:1.3rem;
   }
 
-  .delete{
-    display: none;
+  .deleted{display:none;}
+
+  .nestProcess{
+
+    padding:2rem 0;
   }
+  
+   .conteiner-box{
+    text-align: center;
+    flex-direction: column;
+    
+  }
+  
+  
+  
+  .nestProcess .conteiner-box i{
+    margin:0.6rem 0;
+   
+  }
+  
+
+  
   
 }
 
@@ -711,6 +777,10 @@ span.prev{
 
   }
 
+
+  .nestFacebook h4{
+    font-size:0.7rem;
+  }
   
 
 }
