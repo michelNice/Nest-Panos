@@ -847,6 +847,7 @@ span.prev{
   .space-white,
   .footerNav{
     flex-direction: column;
+    margin:0;
   }
   
   
