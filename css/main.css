@@ -125,6 +125,7 @@ input[type=text] {
 
 .navbar .main-nav-desk {
   display: flex;
+  
 }
 
 .button-nav{
@@ -571,11 +572,99 @@ span.prev{
   margin:0 1rem;
 }
 
+/**************************/
+      /*FOOTER*/
+/**************************/
+  .footerNav{
+    background-color:var(--footer-bg-color);
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .footerNav .main-nav-footer{
+    color: #222;
+   
+  }
 
+  .footerNav ul{
+    padding:0;
+  }
 
+  .footerNav .conteiner h4{
+    padding:0.5rem 0;
+  }
+  
+  .footerNav .main-nav-footer li a{
+    color:var(--slide-color-one);
+    font-family:'playfair display,serif';
+    font-size:1rem;
+  }
 
+  
+  .footerNav .main-nav-footer li a:hover{
+      border-bottom: 1px solid var(--slide-color-one);
+  }
 
+  .footerNav .conteiner .card-imgs{
+    display: flex;
+  }
+
+  .footerNav img{
+    padding-right:.6rem;
+    width:3rem;
+  }
+
+  .footerNav .main-nav-footerIcons {
+    display: flex;
+    gap:.5rem;
+  }
+
+  .footerNav .conteiner-input{
+    width:100%;
+    display: flex;
+  }
+
+  .footerNav .conteiner-input input[type=email]{
+    width: 100%;
+    outline: none;
+    background:var(--footer-bg-color);
+    border:1px solid var(--black--color);
+    
+  
+  }
+
+  .footerNav .link{
+    text-align: center;
+    color:var(--white--color);
+    background: var(--black--color);
+    padding:10px;
+
+  }
+
+  .footerNav .main-nav-footerIcons li a i{
+    background: var(--black--color);
+    color: var(--white--color);
+    width: 1.8rem;
+    height:1.8rem;
+    line-height: 2.2em;
+    border-radius:50%;
+  }
+
+ 
+  .footerNav{
+    padding: 0.7rem;
+  }
+
+  .space-white{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem .7rem;
+  }
+
+  .space-white p{
+    font-size:0.6rem;
+  }
 /**************************/
       /*MOBILE*/
 /**************************/
@@ -754,6 +843,10 @@ span.prev{
     text-align: center;
     flex-direction: column;
     
+  }
+  .space-white,
+  .footerNav{
+    flex-direction: column;
   }
   
   
