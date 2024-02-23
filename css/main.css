@@ -525,10 +525,12 @@ span.prev{
 
 .nestFacebook .lineFacebook {
   border-top: 1px dotted #ccc;
-  margin:0.9rem ;
+  margin:0.9rem 0;
 }
- 
 
+/**************************/
+      /*NEST PROCESS*/
+/**************************/
 
 
 /**************************/
@@ -541,6 +543,10 @@ span.prev{
     margin:0.7rem 0;
     width:100%;
 
+}
+
+.conteiner-process{
+  display: none;
 }
 
 .nestIntagram{
@@ -559,7 +565,7 @@ span.prev{
     height:40vh;
   }
 
-  
+ 
 
 }
 
@@ -572,6 +578,9 @@ span.prev{
   header.fixed-header .logo .img-logo {
     width: 6.25rem;
   }
+
+  
+  .nestProcess .vl,
   .navbar .item:nth-child(1),
   .navbar .main-nav-desk,
   .navbar .main-nav {
@@ -682,11 +691,13 @@ span.prev{
     font-size:0.7rem;
   }
   
-  
-  
 
   .nestIntagram a h2{
     font-size:1.3rem;
+  }
+
+  .delete{
+    display: none;
   }
   
 }
@@ -699,6 +710,8 @@ span.prev{
   .fa-fw{font-size:1.2rem;} 
 
   }
+
+  
 
 }
 
