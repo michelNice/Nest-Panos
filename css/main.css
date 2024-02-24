@@ -339,7 +339,7 @@ span.prev{
 
 .grid-item{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px,2fr));
+  grid-template-columns:repeat(auto-fit, minmax(170px,2fr));
   grid-gap:1rem;
 }
 
@@ -532,6 +532,10 @@ span.prev{
 .nestFacebook .lineFacebook {
   border-top: 1px dotted #ccc;
   margin:0.9rem 0;
+}
+
+.fb-page{
+  width: 100%;
 }
 
 /**************************/
