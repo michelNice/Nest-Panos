@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nest Panos</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <a href="https://wa.me/558196599779" class="float" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
 </head>
 <body>
      <header>
@@ -16,7 +18,7 @@
             </ul>
             <div class="item main-nav">
                 <form action="" method="post" class="search-container" autocomplete="off">
-                  <input type="text"  name="search" autocomplete="off">
+                  <input type="text"  name="search" autocomplete="off" required>
                   <button type="submit" class="button-nav"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -56,7 +58,7 @@
             </div>
         </header>
         <main class="main-page">
-            <section class="showcase">
+            <section class="showcase flex-item">
                 <div class="conteiner">
                     <figure class="gallery-item showcase-conteiner">
                       <img class="gallery-img" src="img/show-product2.webp"/>
@@ -240,8 +242,8 @@
               </iframe>
             </div>
             
-            <section class="nestIntagram">
-              <a class="instagram" href="https://www.instagram.com/nestpanos/">
+            <section class="nestIntagram flex-item">
+              <a class="instagram flex-item" href="https://www.instagram.com/nestpanos/">
                 <i class="fa fa-fw fa-instagram"></i>
                 <div class="content">
                     <p>SIGA-NOS NO INSTAGRAM</p>
@@ -258,7 +260,7 @@
             </section>
            
             <section class="row nestProcess">
-              <div class="conteiner-box">
+              <div class="conteiner-box flex-item">
               <i class="fa fa-fw fa-truck"></i>
               <div>
                 <h4>ENVIAMOS SUAS COMPRAS</h4>
@@ -266,7 +268,7 @@
               </div>
           </div>
           <div class="vl"></div>
-          <div class="conteiner-box deleted">
+          <div class="conteiner-box deleted flex-item">
                       <i class="fa fa-fw fa-credit-card"></i>
                       <div>
                         <h4>PAGUE COMO QUISER</h4>
@@ -274,7 +276,7 @@
                       </div>
                   </div>
                   <div class="vl"></div>
-                  <div class="conteiner-box deleted">
+                  <div class="conteiner-box deleted flex-item">
                       <i class="fa fa-fw fa-lock"></i>
                       <div>
                           <h4>COMPRE COM SEGURANÇA</h4>
@@ -363,9 +365,8 @@
                     <h4>NEWSLETTER</h4>
                     <form action="#">
                       <div class="conteiner-input">
-                        <input type="email" name="text" placeholder="Email">
-                          <a class="link" href="#"><i class="fa fa-fw fa-paper-plane"></i></a>
-                          
+                        <input type="email" name="text" placeholder="Email" >
+                          <a class="link" href="#" name="text"><i class="fa fa-fw fa-paper-plane"></i></a>
                       </div>
                   </form>      
                 </div>

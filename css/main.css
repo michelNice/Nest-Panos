@@ -87,6 +87,19 @@ input[type=text] {
   opacity: 0.8;
  }
 
+ .grid-item{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(170px,2fr));
+  grid-gap:1rem;
+}
+
+
+.flex-item{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 /**************************/
       /*NEVEGATION*/
 /**************************/
@@ -108,11 +121,7 @@ input[type=text] {
 .navbar .mobile-nav {
   display: none;
 }
-/*
-.navbar .main-nav {
-  display: flex;
-}
-*/
+
 .navbar .main-nav-desk li {
   padding: 0 0.2rem;
 }
@@ -253,9 +262,6 @@ span.prev{
       /*SHOWCASE*/
 /************************/
 .showcase{
-  justify-content: center;
-  align-items: center;
-  display:flex;
   gap:2rem;
 }
 
@@ -305,18 +311,6 @@ span.prev{
   visibility: visible;
   opacity: 1;
 }
-/*
-.showcase .containerbutton{
-  color:var(--white--color);
-  background: var(--black--color);
-  padding:.4rem 1rem;
-  text-transform: uppercase;
-  font-size:0.8rem;
-  border: 1px solid  var(--black--color);
-  z-index: 1;
-  cursor:pointer;
-}
-*/
 
 .showcase .conteiner button:hover{
   opacity:0.9;
@@ -338,13 +332,6 @@ span.prev{
   color:var(--grey--color);
   font-size:.9rem;
 }
-
-.grid-item{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(170px,2fr));
-  grid-gap:1rem;
-}
-
 
 .product .container {
   position: relative;
@@ -392,11 +379,9 @@ span.prev{
   color: #eee;
 }
 
+/*flex 1*/
 .product .productNest{
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   padding: .6rem;
 }
@@ -424,7 +409,6 @@ span.prev{
 .product .productNest .content a:hover{
   border-bottom:1px solid var(--black--color);
 }
-
 
 .button-product{
   padding:0.7rem 4rem;
@@ -483,12 +467,9 @@ span.prev{
   margin-top:100rem;
 }
 
-
+/*flex 2*/
 .instagram,
 .nestIntagram{
-  display: flex;
-  align-items: center;
-  align-items: center;
   height:20vh;
   margin:0 auto;
   
@@ -501,7 +482,7 @@ span.prev{
 
 .nestIntagram a {
   font-size:0.7rem;
-  color: #222;
+  color: var(--slide-color-one);
   
 }
 
@@ -534,10 +515,6 @@ span.prev{
   margin:0.9rem 0;
 }
 
-.fb-page{
-  width: 100%;
-}
-
 /**************************/
       /*NEST PROCESS*/
 /**************************/
@@ -553,16 +530,7 @@ span.prev{
   border-left: 1px solid var(--black--color);
 }
 
-
- .conteiner-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
 .nestProcess .conteiner-box p{
-
   font-size: 0.9rem;
 }
 
@@ -586,14 +554,19 @@ span.prev{
   }
 
   .footerNav .main-nav-footer{
-    color: #222;
+    color:var(--slide-color-one);
    
   }
 
   .footerNav ul{
     padding:0;
   }
-
+  
+  .footerNav .conteiner{
+    padding:1rem 0;
+  }
+  
+  .footerNav .container,
   .footerNav .conteiner h4{
     padding:0.5rem 0;
   }
@@ -630,11 +603,9 @@ span.prev{
 
   .footerNav .conteiner-input input[type=email]{
     width: 100%;
-    outline: none;
     background:var(--footer-bg-color);
     border:1px solid var(--black--color);
-    
-  
+
   }
 
   .footerNav .link{
@@ -669,6 +640,28 @@ span.prev{
   .space-white p{
     font-size:0.6rem;
   }
+
+
+  .float{
+    position:fixed;
+    width:2.8rem;
+    height:2.8rem;
+    bottom:3rem;
+    right:1rem;
+    background-color:#25d366;
+    color:var(--white--color);
+    border-radius:3.125rem;
+    text-align:center;
+    font-size:2rem;
+    box-shadow: 2px 2px 3px #999;
+    z-index:1;
+
+  }
+  
+  .my-float{margin-top:.1rem;}
+
+
+
 /**************************/
       /*MOBILE*/
 /**************************/
@@ -755,19 +748,7 @@ span.prev{
     width:.5rem;
     height:.5rem;
   }
-
-  /*
-  .conteiner{
-    width:100%;
   
-  }
-  */
-
-  .showcase{
-    flex-direction:column;
-  }
-
-
   .container,
   .showcase .conteiner{
     width:100%;
@@ -836,33 +817,48 @@ span.prev{
     font-size:1.3rem;
   }
 
-  .deleted{display:none;}
 
   .nestProcess{
 
     padding:2rem 0;
   }
+
   
+
+   .space-white,
    .conteiner-box{
     text-align: center;
     flex-direction: column;
     
   }
+  .showcase,
   .space-white,
   .footerNav{
     flex-direction: column;
-    margin:0;
   }
   
   
-  
+  .footerNav ul li,
   .nestProcess .conteiner-box i{
     margin:0.6rem 0;
    
   }
-  
 
+  .footerNav .conteiner-input input[type=email]{
+    border:0;
+    border-bottom:1px solid var(--slide-color-one);
+  }
+
+  .float{
+    width:1.875rem;
+    height:1.875rem;
+    bottom:1.25rem;
+    right:1.25rem;
+    font-size:0.938rem;
+
+  }
   
+  .my-float{margin-top:0.5rem;}
   
 }
 
@@ -874,8 +870,6 @@ span.prev{
   .fa-fw{font-size:1.2rem;} 
 
   }
-
-
   .nestFacebook h4{
     font-size:0.7rem;
   }
