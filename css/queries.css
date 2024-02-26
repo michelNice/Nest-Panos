@@ -36,10 +36,11 @@
   }
   
   @media(max-width:44rem){
+
   
     header .logo .img-logo {
       width: 6.25rem;
-      margin-left: 3.1rem;
+      margin-left: 5rem;
     }
     header.fixed-header .logo .img-logo {
       width: 6.25rem;
