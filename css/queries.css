@@ -211,6 +211,10 @@
       font-size:0.7rem;
     }
     
-  
+    .fb-page[data-width='50%'] { width:50%; }
+
+    .showcase .content {
+      top: 30%;
+    }
   }
   
