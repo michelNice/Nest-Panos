@@ -1,5 +1,5 @@
 
-	// Access the Images
+	/* Access the Images*/
 	let slideImages = document.querySelectorAll('.img');
 	// Access the next and prev buttons
 	let next = document.querySelector('.next');
@@ -93,7 +93,50 @@
 		indicators();
 	}
 
-	
 
 
-	
+
+
+
+	document.querySelector(".clear-cookie").addEventListener("click", function() {
+		Cookies.remove('colorboxShown');
+		this.outerHTML = "<p><em>Cookie cleared. Re-run demo</em></p>";
+	  });
+	  
+	  document.querySelector(".order-cheezburger").addEventListener("click", function() {
+		document.querySelector('.colorbox').style.display = 'none';
+	  });
+	  
+	  function onPopupOpen() {
+		document.querySelector("#modal-content").style.display = 'block';
+		document.querySelector("#yurEmail").focus();
+	  }
+	  
+	  function onPopupClose() {
+		document.querySelector("#modal-content").style.display = 'none';
+		Cookies.set('colorboxShown', 'yes', {
+		  expires: 1
+		});
+		document.querySelector(".clear-cookie").style.display = 'inline';
+		lastFocus.focus();
+	  }
+	  
+	  function displayPopup() {
+		document.querySelector('.colorbox').style.display = 'block';
+		onPopupOpen();
+	  }
+	  
+	  var lastFocus;
+	  var popupShown = Cookies.get('colorboxShown');
+	  
+	  if (popupShown) {
+		console.log("Cookie found. No action necessary");
+		document.querySelector(".clear-cookie").style.display = 'inline';
+	  } else {
+		console.log("No cookie found. Opening popup in 3 seconds");
+		document.querySelector(".clear-cookie").style.display = 'none';
+		setTimeout(function() {
+		  lastFocus = document.activeElement;
+		  displayPopup();
+		}, 3000);
+	  }
