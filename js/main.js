@@ -53,9 +53,6 @@
         autoSliding(undefined)
     }
 
-	
-	
-
 	// Stop auto sliding when mouse is over
 	const container = document.querySelector('.slide-container');
 	container.addEventListener('mouseover', function(){
@@ -95,48 +92,17 @@
 
 
 
+	const btn_open = document.querySelector('.btn-price')
+	const overlay = document.querySelector('.overlay')
 
 
 
-	document.querySelector(".clear-cookie").addEventListener("click", function() {
-		Cookies.remove('colorboxShown');
-		this.outerHTML = "<p><em>Cookie cleared. Re-run demo</em></p>";
-	  });
-	  
-	  document.querySelector(".order-cheezburger").addEventListener("click", function() {
-		document.querySelector('.colorbox').style.display = 'none';
-	  });
-	  
-	  function onPopupOpen() {
-		document.querySelector("#modal-content").style.display = 'block';
-		document.querySelector("#yurEmail").focus();
-	  }
-	  
-	  function onPopupClose() {
-		document.querySelector("#modal-content").style.display = 'none';
-		Cookies.set('colorboxShown', 'yes', {
-		  expires: 1
-		});
-		document.querySelector(".clear-cookie").style.display = 'inline';
-		lastFocus.focus();
-	  }
-	  
-	  function displayPopup() {
-		document.querySelector('.colorbox').style.display = 'block';
-		onPopupOpen();
-	  }
-	  
-	  var lastFocus;
-	  var popupShown = Cookies.get('colorboxShown');
-	  
-	  if (popupShown) {
-		console.log("Cookie found. No action necessary");
-		document.querySelector(".clear-cookie").style.display = 'inline';
-	  } else {
-		console.log("No cookie found. Opening popup in 3 seconds");
-		document.querySelector(".clear-cookie").style.display = 'none';
-		setTimeout(function() {
-		  lastFocus = document.activeElement;
-		  displayPopup();
-		}, 3000);
-	  }
+	function openModal(){
+		console.log(overlay)
+	}
+
+
+	btn_open.addEventListener('click',openModal)
+	
+
+  
