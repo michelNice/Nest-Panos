@@ -661,13 +661,6 @@ span.prev{
   
   .my-float{margin-top:.1rem;}
 
-
-
-
-
-
-
-
   .model{
     width: 500px;
     background:#fff;
@@ -705,10 +698,6 @@ span.prev{
     cursor: pointer;
   }
 
-
-
-
-
   .overlay{
     position: fixed;
     top: 0;
@@ -727,4 +716,6 @@ span.prev{
   .hidden{display: none;}
 
   .scroll{overflow: hidden;}
-  
+
+
+ 
