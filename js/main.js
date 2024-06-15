@@ -105,4 +105,4 @@
 	btn_open.addEventListener('click',openModal)
 	
 
-  
+
