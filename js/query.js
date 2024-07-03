@@ -6,4 +6,8 @@ $(window).scroll(function(){
 	}
 })
 
+function navigateToPage() {
+	window.location.href = 'product.html';
+}
+
 
